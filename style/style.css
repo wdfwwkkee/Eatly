@@ -370,3 +370,49 @@ a {
     width: 38.077px;
     height: 33px;
 }
+
+
+/*-----------------------------statistics-----------------*/
+
+
+
+.statistics_title {
+    position: relative;
+    color: var(--base-white, #FFF);
+    font-family: Public Sans;
+    font-size: 43.2px;
+    font-weight: 700;
+    line-height: 54px;
+}
+
+.statistics_desc {
+    color: #CBD5E1;
+}
+
+.statistics {
+    background: url(../assets/img/statistics/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.statistics_list {
+    display: flex;
+    padding: 56px;
+}
+
+
+.statistics_item:first-child {
+    padding-left: 0px;
+}
+
+.statistics_item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    padding-right: 67px;
+    padding-left: 67px;
+    border-right: 1px solid hwb(0 77% 23% / 0.282);
+}
+
