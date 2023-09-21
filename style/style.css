@@ -23,6 +23,10 @@ body {
     padding: 0 15px;
 }
 
+button {
+    cursor: pointer;
+}
+
 ol,
 ul,
 a {
@@ -82,9 +86,11 @@ a {
     letter-spacing: 0.163px;
     text-transform: capitalize;
     border-radius: 12.412px;
-    cursor: pointer;
     border-style: solid;
     border-width: 2px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .primary_btn {
@@ -401,7 +407,6 @@ a {
     padding: 56px;
 }
 
-
 .statistics_item:first-child {
     padding-left: 0px;
 }
@@ -416,3 +421,77 @@ a {
     border-right: 1px solid hwb(0 77% 23% / 0.282);
 }
 
+/*-----------------------------download-----------------*/
+
+
+.download_content {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    padding-bottom: 120px;
+    border-bottom: 1px solid #CBCBCB;
+}
+
+.download_phone img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.download_phone {
+    position: relative;
+}
+
+
+.download_phone::before {
+    content: "";
+    background: url(../assets/icons/Illustration\ 02.svg) center no-repeat;
+    width: 50px;
+    height: 50px;
+    top: -8%;
+    right: -15%;
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+.download_text_title {
+    font-size: 50.923px;
+    font-weight: 500;
+    width: 90%;
+    line-height: 58.198px;
+    margin-bottom: 60px;
+}
+
+.download_text_title span {
+    font-size: 50.923px;
+    font-weight: 700;
+    line-height: 58.198px;
+}
+
+.download_text_list {
+    list-style:disc;
+}
+
+.download_text_list_item {
+    width: 80%;
+    color: #676767;
+    font-family: Inter;
+    font-size: 20.335px;
+    font-weight: 400;
+    line-height: 30.502px;
+    margin-bottom: 28px;
+}
+
+.download_button {
+    position: relative;
+}
+
+.download_button::after {
+    content: "";
+    position: absolute;
+    background: url(../assets/icons/arrowUp.svg) no-repeat center;
+    width: 100px;
+    height: 100px;
+    bottom: -120%;
+    transform: rotate(45deg);
+}
