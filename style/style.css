@@ -509,7 +509,7 @@ a {
 }
 
 
-/*-----------------------------top-----------------*/
+/*-----------------------------top---------------------------------*/
 
 
 .top_content {
@@ -527,9 +527,15 @@ a {
     align-self: end;
 }
 
+
+.top_content {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .top_title {
-    width: 100%;
-    text-align: center;
     color: #323142;
     font-family: Poppins;
     font-size: 45px;
@@ -550,7 +556,8 @@ a {
 }
 
 .top_list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-bottom: 65px;
 }
@@ -601,7 +608,7 @@ a {
     padding: 10px 0px 10px 20px;
 }
 
-.top_itemt_txt_category {
+.category {
     display: inline;
     padding: 3px 8px;
     color: #DAA31A;
@@ -610,6 +617,16 @@ a {
     font-weight: 400;
     border-radius: 5.4px;
     background: #F7EDD0;
+}
+
+#red-category {
+    color: #FB471D;
+    background-color: #F7C5BA;
+}
+
+#green-category {
+    background-color: rgba(51, 172, 100, 0.203);
+    color: #309D5B;
 }
 
 .top_itemt_txt_title {
@@ -656,3 +673,111 @@ a {
 }
 
 
+
+/*-----------------------------top-dishes---------------------------------*/
+
+
+.top_dishes_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 120px;
+    border-bottom: 1px solid #CBCBCB;
+}
+
+
+.top_dishes_card_img {
+    text-align: center;
+}
+
+.top_dishes_card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top_dishes_title {
+    color: #323142;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 25.558px;
+    letter-spacing: 1px;
+    margin-bottom: 70px;
+}
+
+
+.top_dishes_title span {
+    color: #6C5FBC;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 25.558px;
+    letter-spacing: 1px;
+}
+
+.top_dishes_card_list {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+
+.top_dishes_card_item {
+    position: relative;
+    padding: 17px;
+    border-radius: 34.581px;
+    border: 1.441px solid #F4F4F6;
+    background: #FFF;
+    box-shadow: 6.84842px 82.18102px 41.09051px 0px rgba(229, 229, 229, 0.70);
+}
+
+.top_dishes_card_title {
+    color: var(--BLACK, #323142);
+    font-size: 23.054px;
+    font-weight: 600;
+    line-height: 37.463px;
+    letter-spacing: 0.5px;
+}
+
+.top_itemt_txt_info_price {
+    color: var(--BLACK, #323142);
+    font-family: Manrope;
+    font-size: 25.936px;
+    font-weight: 700;
+    line-height: 40.345px;
+}
+
+.top_itemt_txt_info_add {
+    border-radius: 6px;
+    border: none;
+    background-color: #323142;
+    color: #FFFFFF;
+    width: 40px;
+    height: 35px;
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.top_itemt_txt_info_bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top_dishes_card_txt>.top_itemt_txt_info {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.top_dishes_card_like {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.top_dishes_card_like button {
+    border: none;
+    background-color: transparent;
+}
