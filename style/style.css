@@ -717,7 +717,7 @@ a {
 
 .top_dishes_card_list {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 30px;
     margin-bottom: 60px;
 }
@@ -781,3 +781,192 @@ a {
     border: none;
     background-color: transparent;
 }
+
+
+
+/*-----------------------------purchases-----------------*/
+
+
+.purchase_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 10px;
+    padding-bottom: 130px;
+    border-bottom: 1px solid #CBCBCB;
+}
+
+.purchase_header {
+    flex: 0 1 50%;
+}
+
+.purchase_header_title,
+.purchase_header_title span {
+    font-size: 50.923px;
+    font-weight: 600;
+    line-height: 58.198px;
+    opacity: 0.9;
+    text-align: left;
+}
+
+.purchase_header_title {
+    margin-bottom: 50px;
+}
+
+.purchase_header_title_card_list {
+    display: grid;
+    grid-template-columns: 0.7fr;
+    gap: 10px;
+}
+
+.purchase_card_txt {
+    width: 100%;
+}
+
+.purchase_card_title {
+    color: #323142;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.purchase_card_desc {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    color: #323142;
+    margin: 0 0 5px;
+}
+
+.purchase_card_info {
+    text-align: right;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    color: #acadb9;
+}
+
+.purchase_header_title_card_item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 12.041px;
+    background: #FFF;
+    padding: 10px 17px;
+    box-shadow: 0 20px 30px rgba(70, 70, 70, 0.1);
+}
+
+.purchase_dashboard {
+    flex: 0 1 47%;
+    border-radius: 25.129px;
+    border: 1.571px solid #EDF2F7;
+    background: #FFF;
+    padding: 45px 40px;
+    box-shadow: 0 20px 30px rgba(50, 49, 66, 0.2);
+}
+
+
+.purchase_dashboard_card_item {
+    position: relative;
+    padding: 25px 25px 55px;
+    border-radius: 18.847px;
+    border: 1.571px solid var(--greyscale-200, #EDF2F7);
+}
+
+.purchase_dashboard_card_item_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard_card_item_icon {
+    padding: 12px 13px;
+    border-radius: 1570.588px;
+    background: #F4F0FF;
+}
+
+.purchase_dashboard_title {
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.purchase_dashboard_card_item_name {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.purchase_dashboard_title_txt {
+    color: var(--greyscale-900, #1A202C);
+    font-family: Manrope;
+    font-size: 28.271px;
+    font-weight: 800;
+    line-height: 135%;
+    letter-spacing: 0.314px;
+}
+
+.dashboard_card_item_txt_title {
+    color: var(--greyscale-900, #1A202C);
+    font-size: 18.847px;
+    font-weight: 800;
+    line-height: 150%;
+    letter-spacing: 0.628px;
+}
+
+.dashboard_card_item_txt_increased {
+    color: var(--greyscale-500, #A0AEC0);
+    font-size: 15.706px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.628px;
+}
+
+.purchase_dashboard_card_item_price {
+    font-family: "Manrope", sans-serif;
+    color: #1A202C;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.purchase_dashboard_purple::before,
+.purchase_dashboard_purple::after {
+    background-color: #6b5fbc;
+}
+
+.purchase_dashboard_card_item::before {
+    opacity: 0.2;
+}
+
+.purchase_dashboard_purple::after {
+    width: 70%;
+    background-color: #6b5fbc;
+}
+
+.purchase_dashboard_card_item::after,
+.purchase_dashboard_card_item::before {
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    right: 25px;
+    height: 9.42px;
+    border-radius: 78px;
+}
+
+.purchase_select {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    letter-spacing: 0.6px;
+    color: #1a202c;
+    padding: 12px 18px;
+    background: #fafafa;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+
+
+
