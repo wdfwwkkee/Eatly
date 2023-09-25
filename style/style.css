@@ -895,6 +895,11 @@ a {
     background: #F4F0FF;
 }
 
+#green-bg {
+    background: #F2FDF6;
+}
+
+
 .purchase_dashboard_title {
     margin-bottom: 45px;
     display: flex;
@@ -943,6 +948,15 @@ a {
 .purchase_dashboard_purple::before,
 .purchase_dashboard_purple::after {
     background-color: #6b5fbc;
+}
+
+.purchase_dashboard_yellow::before,
+.purchase_dashboard_yellow::after {
+    background: #FBAD18;
+}
+
+.purchase_dashboard_yellow::after {
+    width: 70%;
 }
 
 .purchase_dashboard_card_item::before {
