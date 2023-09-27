@@ -5,3 +5,11 @@ var swiper = new Swiper(".reviewSwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+
+
+document.querySelector('.header_burger').addEventListener('click', function() {
+  this.classList.toggle('active');
+  document.querySelector('.nav-bar').classList.toggle('active');
+  document.querySelector('body').classList.toggle('lock');
+})
